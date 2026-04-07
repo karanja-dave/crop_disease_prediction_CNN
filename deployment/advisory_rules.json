@@ -1,0 +1,134 @@
+{
+    "Corn___Common_Rust": {
+        "disease_name": "Common Rust",
+        "crop": "Corn",
+        "severity": "Medium",
+        "treatment": [
+            "Apply fungicides containing strobilurins or triazoles",
+            "Monitor fields regularly for pustule development"
+        ],
+        "prevention": [
+            "Plant resistant varieties",
+            "Early planting to avoid peak rust season"
+        ],
+        "confidence_threshold": 0.70
+    },
+    "Corn___Gray_Leaf_Spot": {
+        "disease_name": "Gray Leaf Spot",
+        "crop": "Corn",
+        "severity": "High",
+        "treatment": [
+            "Apply fungicides containing strobilurins or triazoles",
+            "Rotate crops with non-host plants",
+            "Remove infected crop residues"
+        ],
+        "prevention": [
+            "Plant resistant hybrids",
+            "Ensure proper spacing for air circulation"
+        ],
+        "confidence_threshold": 0.75
+    },
+    "Corn___Healthy": {
+        "disease_name": "Healthy",
+        "crop": "Corn",
+        "severity": "None",
+        "treatment": ["No treatment needed"],
+        "prevention": [
+            "Continue good agricultural practices",
+            "Monitor regularly for early disease detection"
+        ],
+        "confidence_threshold": 0.85
+    },
+    "Corn___Northern_Leaf_Blight": {
+        "disease_name": "Northern Leaf Blight",
+        "crop": "Corn",
+        "severity": "High",
+        "treatment": [
+            "Apply fungicides when lesions appear on upper leaves",
+            "Crop rotation with non-cereal crops"
+        ],
+        "prevention": [
+            "Use resistant hybrids",
+            "Eliminate crop residue through tillage"
+        ],
+        "confidence_threshold": 0.75
+    },
+    "Potato___Early_Blight": {
+        "disease_name": "Early Blight",
+        "crop": "Potato",
+        "severity": "Medium",
+        "treatment": [
+            "Apply copper-based fungicides or chlorothalonil",
+            "Remove infected leaves"
+        ],
+        "prevention": [
+            "Rotate crops (3-4 year cycle)",
+            "Use certified disease-free seed tubers"
+        ],
+        "confidence_threshold": 0.75
+    },
+    "Potato___Healthy": {
+        "disease_name": "Healthy",
+        "crop": "Potato",
+        "severity": "None",
+        "treatment": ["No treatment needed"],
+        "prevention": [
+            "Store tubers in cool, dry conditions",
+            "Use certified seed for next planting"
+        ],
+        "confidence_threshold": 0.85
+    },
+    "Potato___Late_Blight": {
+        "disease_name": "Late Blight",
+        "crop": "Potato",
+        "severity": "Critical",
+        "treatment": [
+            "Apply fungicides immediately (mancozeb, cymoxanil)",
+            "Destroy severely infected plants"
+        ],
+        "prevention": [
+            "Plant resistant varieties",
+            "Avoid overhead irrigation in cool, humid weather"
+        ],
+        "confidence_threshold": 0.80
+    },
+    "Wheat___Brown_Rust": {
+        "disease_name": "Brown Rust (Leaf Rust)",
+        "crop": "Wheat",
+        "severity": "Medium",
+        "treatment": [
+            "Apply fungicides at flag leaf stage",
+            "Use triazole or strobilurin fungicides"
+        ],
+        "prevention": [
+            "Plant resistant varieties",
+            "Early sowing to avoid peak disease period"
+        ],
+        "confidence_threshold": 0.75
+    },
+    "Wheat___Healthy": {
+        "disease_name": "Healthy",
+        "crop": "Wheat",
+        "severity": "None",
+        "treatment": ["No treatment needed"],
+        "prevention": [
+            "Maintain optimal planting density",
+            "Balanced fertilization"
+        ],
+        "confidence_threshold": 0.85
+    },
+    "Wheat___Yellow_Rust": {
+        "disease_name": "Yellow Rust (Stripe Rust)",
+        "crop": "Wheat",
+        "severity": "High",
+        "treatment": [
+            "Apply fungicides at first sign of yellow stripes",
+            "Use specific fungicides for yellow rust control"
+        ],
+        "prevention": [
+            "Plant resistant varieties with Yr genes",
+            "Destroy volunteer wheat plants"
+        ],
+        "confidence_threshold": 0.80
+    }
+}
