@@ -3,3 +3,7 @@ venv/
 processed_data/
 CAPSTONE CORRECTION.docx"models/custom_cnn_best.h5" 
 "models/" 
+# Ignore model files
+*.h5
+models/*.h5
+deployment/*.h5
