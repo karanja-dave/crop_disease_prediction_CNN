@@ -6,4 +6,4 @@ CAPSTONE CORRECTION.docx"models/custom_cnn_best.h5"
 # Ignore model files
 *.h5
 models/*.h5
-deployment/*.h5
+!deployment/best_model.h5
