@@ -1,0 +1,33 @@
+{
+  "name": "NeuralNest_MobileNetV2",
+  "input_shape": [
+    224,
+    224,
+    3
+  ],
+  "output_shape": [
+    10
+  ],
+  "num_classes": 10,
+  "class_names": [
+    "Corn___Common_Rust",
+    "Corn___Gray_Leaf_Spot",
+    "Corn___Healthy",
+    "Corn___Northern_Leaf_Blight",
+    "Potato___Early_Blight",
+    "Potato___Healthy",
+    "Potato___Late_Blight",
+    "Wheat___Brown_Rust",
+    "Wheat___Healthy",
+    "Wheat___Yellow_Rust"
+  ],
+  "export_date": "2026-04-14T10:29:11.525011",
+  "tensorflow_version": "2.21.0",
+  "keras_backend": "legacy_tf_keras",
+  "file_sizes": {
+    "keras_mb": 25.26,
+    "h5_mb": 25.14,
+    "savedmodel_mb": 28.19,
+    "tflite_mb": 9.09
+  }
+}

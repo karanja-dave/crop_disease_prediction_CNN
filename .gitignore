@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+
+# Dataset (VERY IMPORTANT)
+Crop Diseases Dataset/
+
+# Logs
+logs/
+
+# Large model backups (optional exclude)
+models/*.h5
+models/*.keras
+!models/deployment/
+
+# OS files
+.DS_Store
+Thumbs.db

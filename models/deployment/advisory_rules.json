@@ -1,0 +1,67 @@
+ADVISORY_MAP = {
+    # ==================== CORN ====================
+    "Corn___Common_Rust": {
+        "crop": "Corn", "severity": "Medium",
+        "treatment": ["Apply fungicides at silk stage", "Use mancozeb products"],
+        "prevention": ["Plant resistant hybrids", "Avoid late planting"],
+        "confidence_threshold": 0.70
+    },
+    "Corn___Gray_Leaf_Spot": {
+        "crop": "Corn", "severity": "High",
+        "treatment": ["Apply fungicides with azoxystrobin", "Remove infected debris", "Rotate crops 2-3 years"],
+        "prevention": ["Plant resistant varieties", "Avoid overhead irrigation", "Monitor regularly"],
+        "confidence_threshold": 0.70
+    },
+    "Corn___Northern_Leaf_Blight": {
+        "crop": "Corn", "severity": "High",
+        "treatment": ["Apply pyraclostrobin", "Remove crop residue"],
+        "prevention": ["Use resistant hybrids", "Practice crop rotation"],
+        "confidence_threshold": 0.70
+    },
+    "Corn___Healthy": {
+        "crop": "Corn", "severity": "None",
+        "treatment": ["No treatment needed"],
+        "prevention": ["Continue good practices", "Monitor regularly"],
+        "confidence_threshold": 0.85
+    },
+    
+    # ==================== POTATO ====================
+    "Potato___Early_Blight": {
+        "crop": "Potato", "severity": "Medium",
+        "treatment": ["Apply chlorothalonil", "Remove lower leaves", "Maintain soil moisture"],
+        "prevention": ["Rotate 3+ years", "Use certified seed", "Proper hilling"],
+        "confidence_threshold": 0.70
+    },
+    "Potato___Late_Blight": {
+        "crop": "Potato", "severity": "Critical",
+        "treatment": ["Apply mefenoxam immediately", "Destroy infected plants", "Harvest tubers"],
+        "prevention": ["Use certified seed", "Avoid poorly drained areas", "Monitor weather"],
+        "confidence_threshold": 0.75
+    },
+    "Potato___Healthy": {
+        "crop": "Potato", "severity": "None",
+        "treatment": ["No treatment needed"],
+        "prevention": ["Continue monitoring", "Proper irrigation"],
+        "confidence_threshold": 0.85
+    },
+    
+    # ==================== WHEAT ====================
+    "Wheat___Brown_Rust": {
+        "crop": "Wheat", "severity": "High",
+        "treatment": ["Apply fungicides with propiconazole", "Remove infected leaves", "Improve air circulation"],
+        "prevention": ["Plant resistant varieties", "Avoid dense planting", "Monitor in humid weather"],
+        "confidence_threshold": 0.70
+    },
+    "Wheat___Yellow_Rust": {
+        "crop": "Wheat", "severity": "High",
+        "treatment": ["Apply fungicides with tebuconazole", "Remove infected plant debris"],
+        "prevention": ["Use resistant cultivars", "Early planting", "Avoid excessive nitrogen"],
+        "confidence_threshold": 0.70
+    },
+    "Wheat___Healthy": {
+        "crop": "Wheat", "severity": "None",
+        "treatment": ["No treatment needed"],
+        "prevention": ["Continue good practices", "Regular monitoring"],
+        "confidence_threshold": 0.85
+    }
+}

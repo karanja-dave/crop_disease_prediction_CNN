@@ -1,0 +1,42 @@
+# Deep Learning
+tensorflow
+keras
+
+# Data Processing
+numpy
+pandas
+scikit-learn
+
+# Image Processing
+Pillow
+opencv-python
+
+# Visualization
+matplotlib
+seaborn
+plotly
+tensorboard
+
+# Jupyter & Development
+jupyter
+ipython
+tqdm
+
+# Kaggle Dataset Download
+kaggle
+
+# Utilities
+pathlib
+PyYAML
+
+# Model applications (sometimes required explicitly)
+tensorflow-hub
+
+# For saving/loading models safely
+h5py
+
+# For TFLite export stability
+protobuf
+
+# Optional but useful for performance
+scipy
