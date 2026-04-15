@@ -632,74 +632,69 @@ section[data-testid="stSidebar"] > div {{
 # BUILT-IN ADVISORY DATABASE
 # ===============
 BUILT_IN_ADVISORY = {
+    # ==================== CORN ====================
     "Corn___Common_Rust": {
-        "crop": "Corn",
-        "severity": "Medium",
-        "treatment": ["Apply fungicides at silk stage", "Use mancozeb products", "Repeat every 7-10 days"],
-        "prevention": ["Plant resistant hybrids", "Avoid late planting", "Ensure proper spacing"],
+        "crop": "Corn", "severity": "Medium",
+        "treatment": ["Apply fungicides at silk stage", "Use mancozeb products"],
+        "prevention": ["Plant resistant hybrids", "Avoid late planting"],
         "confidence_threshold": 0.70
     },
     "Corn___Gray_Leaf_Spot": {
-        "crop": "Corn",
-        "severity": "High",
+        "crop": "Corn", "severity": "High",
         "treatment": ["Apply fungicides with azoxystrobin", "Remove infected debris", "Rotate crops 2-3 years"],
         "prevention": ["Plant resistant varieties", "Avoid overhead irrigation", "Monitor regularly"],
         "confidence_threshold": 0.70
     },
     "Corn___Northern_Leaf_Blight": {
-        "crop": "Corn",
-        "severity": "High",
-        "treatment": ["Apply pyraclostrobin", "Remove crop residue", "Improve air circulation"],
-        "prevention": ["Use resistant hybrids", "Practice crop rotation", "Avoid dense planting"],
+        "crop": "Corn", "severity": "High",
+        "treatment": ["Apply pyraclostrobin", "Remove crop residue"],
+        "prevention": ["Use resistant hybrids", "Practice crop rotation"],
         "confidence_threshold": 0.70
     },
     "Corn___Healthy": {
-        "crop": "Corn",
-        "severity": "None",
+        "crop": "Corn", "severity": "None",
         "treatment": ["No treatment needed"],
-        "prevention": ["Continue good practices", "Monitor regularly", "Maintain soil health"],
+        "prevention": ["Continue good practices", "Monitor regularly"],
         "confidence_threshold": 0.85
     },
+    
+    # ==================== POTATO ====================
     "Potato___Early_Blight": {
-        "crop": "Potato",
-        "severity": "Medium",
+        "crop": "Potato", "severity": "Medium",
         "treatment": ["Apply chlorothalonil", "Remove lower leaves", "Maintain soil moisture"],
         "prevention": ["Rotate 3+ years", "Use certified seed", "Proper hilling"],
         "confidence_threshold": 0.70
     },
     "Potato___Late_Blight": {
-        "crop": "Potato",
-        "severity": "Critical",
-        "treatment": ["Apply mefenoxam immediately", "Destroy infected plants", "Harvest tubers early"],
-        "prevention": ["Use certified seed", "Avoid poorly drained areas", "Monitor weather conditions"],
+        "crop": "Potato", "severity": "Critical",
+        "treatment": ["Apply mefenoxam immediately", "Destroy infected plants", "Harvest tubers"],
+        "prevention": ["Use certified seed", "Avoid poorly drained areas", "Monitor weather"],
         "confidence_threshold": 0.75
     },
     "Potato___Healthy": {
-        "crop": "Potato",
-        "severity": "None",
+        "crop": "Potato", "severity": "None",
         "treatment": ["No treatment needed"],
-        "prevention": ["Continue monitoring", "Proper irrigation", "Regular fertilization"],
+        "prevention": ["Continue monitoring", "Proper irrigation"],
         "confidence_threshold": 0.85
     },
+    
+    # ==================== WHEAT ====================
     "Wheat___Brown_Rust": {
-        "crop": "Wheat",
-        "severity": "High",
+        "crop": "Wheat", "severity": "High",
         "treatment": ["Apply fungicides with propiconazole", "Remove infected leaves", "Improve air circulation"],
         "prevention": ["Plant resistant varieties", "Avoid dense planting", "Monitor in humid weather"],
         "confidence_threshold": 0.70
     },
     "Wheat___Yellow_Rust": {
-        "crop": "Wheat",
-        "severity": "High",
+        "crop": "Wheat", "severity": "High",
         "treatment": ["Apply fungicides with tebuconazole", "Remove infected plant debris"],
         "prevention": ["Use resistant cultivars", "Early planting", "Avoid excessive nitrogen"],
         "confidence_threshold": 0.70
     },
     "Wheat___Healthy": {
-        "crop": "Wheat",
-        "severity": "None",
+        "crop": "Wheat", "severity": "None",
         "treatment": ["No treatment needed"],
-        "prevention": ["Continue good practices", "Regular monitoring", "Balanced fertilization"],
+        "prevention": ["Continue good practices", "Regular monitoring"],
         "confidence_threshold": 0.85
     }
 }
@@ -726,10 +721,12 @@ with st.sidebar:
     # Social Icons
     st.markdown("""
     <div class="social-bar">
-        <a href="https://twitter.com" target="_blank" class="social-btn" title="Twitter">𝕏</a>
-        <a href="https://facebook.com" target="_blank" class="social-btn" title="Facebook">f</a>
-        <a href="https://instagram.com" target="_blank" class="social-btn" title="Instagram">📷</a>
-        <a href="https://linkedin.com" target="_blank" class="social-btn" title="LinkedIn">in</a>
+       <a href="https://x.com/Instructure" target="_blank" class="social-btn" title="Twitter">𝕏</a>
+        <a href="https://www.linkedin.com/company/ngao-labs" target="_blank" class="social-btn" title="LinkedIn">in</a>
+        <a href="https://github.com/karanja-dave/crop_disease_prediction_CNN.git" target="_blank" class="social-btn" title="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.kaggle.com/datasets/shubham2703/five-crop-diseases-dataset" target="_blank" class="social-btn" title="Kaggle">k</a>
     </div>
     """, unsafe_allow_html=True)
     
@@ -914,17 +911,52 @@ elif st.session_state.page == "Disease Detection":
             import random
             import time
             
-            # Simulated analysis (replace with actual model prediction)
+                       # ========== ACTUAL MODEL PREDICTION ==========
+            import tensorflow as tf
+            from tensorflow import keras
+            from tensorflow.keras.preprocessing import image
+            import numpy as np
+            
+            # Set TF environment (match your training setup)
+            os.environ["TF_USE_LEGACY_KERAS"] = "1"
+            os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
+            
+            @st.cache_resource
+            def load_model():
+                """Load trained MobileNetV2 from deployment folder"""
+                # Use the deployment model (or change to mobilenetv2_best.keras)
+                model_path = "D:/CAPSTONE REVISED/models/deployment/NeuralNest_MobileNetV2.keras"
+                return keras.models.load_model(model_path)
+            
+            @st.cache_resource
+            def load_class_names():
+                """Load class names"""
+                import json
+                with open("D:/CAPSTONE REVISED/models/deployment/class_names.json", 'r') as f:
+                    return json.load(f)
+            
+            # Load once
+            model = load_model()
+            CLASS_NAMES = load_class_names()
+            
             with st.spinner("🧠 Analyzing image with Neural Network..."):
                 progress_bar = st.progress(0)
-                for i in range(100):
-                    time.sleep(0.015)
-                    progress_bar.progress(i + 1)
-            
-            # Simulate prediction (in real app, use your CNN model)
-            class_names = list(BUILT_IN_ADVISORY.keys())
-            label = random.choice(class_names)
-            confidence = random.uniform(0.75, 0.98)
+                
+                # 1. Load and preprocess image (224x224, normalize)
+                img = image.load_img(uploaded_file, target_size=(224, 224))
+                img_array = image.img_to_array(img)
+                img_array = np.expand_dims(img_array, axis=0) / 255.0
+                
+                progress_bar.progress(50)
+                
+                # 2. Predict
+                predictions = model.predict(img_array, verbose=0)
+                predicted_idx = np.argmax(predictions[0])
+                confidence = float(predictions[0][predicted_idx])
+                label = CLASS_NAMES[predicted_idx]
+                
+                progress_bar.progress(100)
+                time.sleep(0.3)  # Brief pause for UX
             
             # Add to persistent history
             add_to_history(label, confidence)
