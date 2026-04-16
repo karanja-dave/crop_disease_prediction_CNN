@@ -1,13 +1,19 @@
 New_Plant_Diseases_Dataset/
-venv/
+.venv/
+.vscode
+.ipynb_checkpoints
+data/
+documentation/notebook_colab.ipynb
+documentation/meth2.ipynb
+documentation/
+documentation/image_sample.png
+
 processed_data/
 CAPSTONE CORRECTION.docx"models/custom_cnn_best.h5" 
 "models/" 
 # Ignore model files
 *.h5
 models/*.h5
-<<<<<<< HEAD
 !deployment/best_model.h5
-=======
 deployment/*.h5
->>>>>>> 3ba95ae89dcfda98f2db3f0f6474f5c65a5f4441
+
