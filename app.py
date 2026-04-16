@@ -923,7 +923,7 @@ elif st.session_state.page == "Disease Detection":
             
             @st.cache_resource
             def load_model():
-                model_path = BASE_DIR / "models" / "deployment" / "NeuralNest_MobileNetV2.keras"
+                model_path = BASE_DIR / "models" / "deployment" / "NeuralNest_MobileNetV2_savedmodel"
                 
                 if not model_path.exists():
                     st.error(f"Model not found at {model_path}")
