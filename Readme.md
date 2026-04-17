@@ -2,6 +2,16 @@
 
 Deep learning project for multi-class classification of crop diseases using leaf images. Built as a capstone project under the NgaoLabs Data Science Training Program.
 
+Authors
+- Pauline Onyango
+- Jedidiah Waweru
+- Dave Karanja
+
+Deployment
+
+Live Application:
+https://cropdiseasespredictioncnn-d2sxrpgrmhfgxbcotwiczz.streamlit.app/
+
 ---
 
 ## Executive Summary
@@ -146,24 +156,3 @@ python -m venv .venv
 ```bash
 pip install -r requirements.txt
 
-
-                                                                Input Image
-                                                                    ↓
-                                                    ┌─────────────────────────────────────┐
-                                                    │  Stage 1: Crop Type Classifier      │
-                                                    │  (Corn, Potato, Wheat)              │
-                                                    └─────────────────┬───────────────────┘
-                                                                      ↓
-                                                            What crop is it?
-                                                        ┌─────────────┬──────────────┐
-                                                        ↓             ↓              ↓
-                                                    [Corn]       [Potato]       [Wheat]
-                                                        ↓             ↓              ↓
-                                                    ┌──────────┐  ┌──────────┐  ┌──────────┐
-                                                    │Stage 2.1 │  │Stage 2.2 │  │Stage 2.3 │
-                                                    │Corn HC   │  │Potato HC │  │Wheat HC  │
-                                                    │Classifier│  │Classifier│  │Classifier│
-                                                    └────┬─────┘  └────┬─────┘  └────┬─────┘
-                                                        ↓             ↓              ↓
-                                                    Healthy or    Healthy or    Healthy or
-                                                    Disease X     Disease Y     Disease Z
