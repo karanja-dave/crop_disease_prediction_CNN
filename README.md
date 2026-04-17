@@ -168,7 +168,7 @@ streamlit run app.py
 ```
 
 Access at `http://localhost:8501`
-
+Hosted at  `https://cropdiseasespredictioncnn-d2sxrpgrmhfgxbcotwiczz.streamlit.app/`
 ---
 
 ## Project Structure
